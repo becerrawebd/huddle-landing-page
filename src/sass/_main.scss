@@ -1,0 +1,13 @@
+@import "header";
+@import "hero";
+
+.main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    background: url("../../static/img/bg-hero-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $VeryPaleCyan;
+    height: 100vh;
+}

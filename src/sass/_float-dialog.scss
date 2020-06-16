@@ -1,0 +1,38 @@
+.float-dialog {
+    grid-area: float-dialog;
+    text-align: center;
+    background: #FFF;
+    border-radius: 20px;
+    position: absolute;
+    transform: translateY(30px);
+    box-shadow: 5px 5px 10px 10px rgba($color: #000000, $alpha: 0.1);
+    width: 100%;
+    padding: 2.5rem 1rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: translateY(240px);
+
+
+    .float-dialog-title {
+        margin-bottom: 1rem;
+    }
+
+    .float-dialog-button {
+        width: 70%;
+    }
+
+    @media screen and(min-width: 768px) {
+        width: 50%;
+
+        .float-dialog-title {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .float-dialog-button {
+            width: 50%;
+        }
+    }
+}

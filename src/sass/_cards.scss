@@ -1,0 +1,49 @@
+.cards {
+    grid-area: cards;
+    position: relative;
+    margin-bottom: 7rem;
+
+    .card {
+        padding: 1rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        min-height: 500px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px 1px rgba($color: #000000, $alpha: 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        .card-heading {
+            margin-bottom: .5rem;
+        }
+
+        .card-img {
+            width: 80%;
+            margin-bottom: 2rem;
+        }
+
+        .card-text {
+            font-size: 1rem;
+            color: $GrayishBlue;
+        }
+
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            text-align: left;
+
+            &:nth-child(2n+1) {
+                flex-direction: row-reverse;
+            }
+
+            .card-img {
+                width: 40%;
+            }
+
+            .card-content {
+                width: 40%;
+            }
+        }
+    }
+}

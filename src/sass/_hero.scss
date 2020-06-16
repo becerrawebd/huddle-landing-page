@@ -1,0 +1,51 @@
+.hero {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+
+    .img-hero {
+        width: 100%;
+    }
+
+    .hero-text {
+        margin-bottom: 40px;
+
+        p {
+            font-size: 1rem;
+            line-height: 30px;
+        }
+
+        .heading-text,
+        p,
+        .button {
+            margin-bottom: 30px;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        text-align: left;
+        flex-direction: row;
+        align-items: center;
+
+        .hero-text {
+            margin-bottom: 40px;
+
+            .heading-text {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1.1rem;
+                line-height: 30px;
+            }
+
+            .heading-text,
+            p,
+            .button {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

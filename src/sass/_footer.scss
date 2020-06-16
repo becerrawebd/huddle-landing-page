@@ -1,0 +1,134 @@
+.footer {
+    grid-area: footer;
+    background: $VeryDarkCyan;
+    color: $VeryPaleCyan;
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+
+    .logo-footer {
+        margin-bottom: 2rem;
+        filter: brightness(0) invert(1);
+        height: 2rem;
+    }
+
+    .container-footer {
+        display: flex;
+        flex-direction: column;
+
+        .contact-container,
+        .links,
+        .social-media {
+            display: flex;
+        }
+
+        .contact-container {
+            flex-direction: column;
+
+            .location,
+            .phone,
+            .email {
+                display: flex;
+                margin-bottom: 2rem;
+                font-size: 1rem;
+
+                img {
+                    width: 20px;
+                    margin-right: 1.2rem;
+                }
+            }
+        }
+
+        .contact-container,
+        .links,
+        .social-media {
+            margin-bottom: 2rem;
+        }
+
+        .links {
+            flex-direction: column;
+
+            li {
+                margin-bottom: 1rem;
+                transition: all .5s ease;
+
+                &:hover {
+                    transform: translateX(10px);
+                }
+            }
+
+        }
+
+        .social-media {
+            justify-content: space-evenly;
+
+            li {
+                a {
+                    border-radius: 50%;
+                    border: 1px solid $VeryPaleCyan;
+                    width: 35px;
+                    height: 35px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    i {
+                        font-size: 20px;
+                    }
+
+                    &:hover {
+                        background: $VeryPaleCyan;
+                        color: $VeryDarkCyan;
+                    }
+                }
+            }
+        }
+
+        .links,
+        .social-media {
+            list-style: none;
+
+            a {
+
+                color: $VeryPaleCyan;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .copyright {
+        text-align: center;
+        font-size: .8rem;
+
+        a {
+            text-decoration: none;
+            color: $VeryPaleCyan;
+            font-weight: 700;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .container-footer {
+            flex-direction: row;
+            justify-content: space-between;
+
+            .links {
+                flex-direction: row;
+                justify-content: space-between;
+
+                .links-left {
+                    margin-right: 4rem;
+                }
+            }
+
+            .social-media {
+                width: 20%;
+                justify-content: space-around;
+            }
+        }
+
+        .copyright {
+            text-align: right;
+        }
+
+    }
+}
